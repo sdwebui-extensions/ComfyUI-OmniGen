@@ -14,6 +14,8 @@ import shutil
 class Paths:
     ROOT_DIR = osp.dirname(__file__)
     MODELS_DIR = folder_paths.models_dir
+    if os.path.exists(folder_paths.cache_dir):
+        MODELS_DIR = folder_paths.cache_dir
     LLM_DIR = osp.join(MODELS_DIR, "LLM")
     OMNIGEN_DIR = osp.join(LLM_DIR, "OmniGen-v1")
     OMNIGEN_CODE_DIR = osp.join(ROOT_DIR, "OmniGen")
