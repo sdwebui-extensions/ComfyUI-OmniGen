@@ -1,6 +1,13 @@
 # ComfyUI-OmniGen
 
-A ComfyUI custom node implementation of [OmniGen](https://github.com/VectorSpaceLab/OmniGen), a powerful text-to-image generation and editing model.
+A ComfyUI custom node implementation of OmniGen, a powerful all in one text-to-image generation and editing model.
+
+$${\color{red}If\ this\ custom\ node\ helps\ you\ or\ you\ like\ my\ work,\ please\ give\ me⭐on\ this\ repo!}$$
+$${\color{red}It's\ a\ greatest\ encouragement\ for\ my\ efforts!}$$
+
+## Updates
+
+- 2024/11/11: Added new features and bug fixes. Refer to [update.md](UPDATE.md) for details.
 
 <details>
 <summary><h2>Features</h2></summary>
@@ -41,17 +48,17 @@ No manual file downloading is required. The node will handle everything automati
 >After downloading, place the model in the following directory: `comfyui/models/LLM/OmniGen-v1`
 
 ### Example workflows
-Simple usage for text to image & image to image.
-![Simple usage for text to image & image to image](/Examples/omnigen_1.png)
+Simple usage for text to image & image to image. [workflow](/Examples/omnigen_t2i_i2i.json)
+![Simple usage for text to image & image to image](/Examples/imgs/omnigen_t2i_i2i.jpg)
 
-Generate an image that combines 2 images.
-![Generate an image that combines multiple images.](/Examples/omnigen_2a.png)
+Generate an image that combines 2 images. [Workflow](/Examples/omnigen_combine.json)
+![Generate an image that combines multiple images.](/Examples/imgs/omnigen_combine.jpg)
 
 Following the pose of this image `image_1`, generate a new photo: An viking old man standing.
 ![Following the pose of this image `image_1`, generate a new photo: An viking old man standing.](/Examples/imgs/PoseToImage_wf.jpg)
 
-Generate a depth map from the input image and create a new image based on the depth map.
-![Generate a depth map from the input image and create a new image based on the depth map.](/Examples/imgs/deaptnmapToImage_wf.jpg)
+Generate a depth map from the input image and create a new image based on the depth map. [Workflow](/Examples/depthmap2image.json)
+![Generate a depth map from the input image and create a new image based on the depth map.](/Examples/imgs/deptnmapToImage_wf.jpg)
 
 Deblur this image. `image_1`
 ![Deblur this image. `image_1`](/Examples/imgs/deblur_wf.jpg)
